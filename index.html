@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="expenses.js" defer></script>
+    <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+    <main>
+        <div class="grid-container">
+            <section class="balance">
+                <div>
+                    <p>My balance</p>
+                    <p class="medium-text">$921.48</p>
+                </div>
+                <div>                    
+                    <img src="images/logo.svg" alt="logo">
+                </div>
+            </section>
+
+            <section class="spending">
+                <h1 class="dark-text medium-text">Spending - Last 7 days</h1>
+
+                <div class="chart">
+                    <div>
+                        <span class="detail" id="mon-detail">$42.56</span>
+                        <div class="bar day" id="mon"></div>
+                    </div>
+                    <div>
+                        <span class="detail" id="tue-detail"></span>
+                        <div class="bar day" id="tue"></div>
+                    </div>
+                    <div>
+                        <span class="detail" id="wed-detail"></span>
+                        <div class="bar day" id="wed"></div>
+                    </div>
+                    <div>
+                        <span class="detail" id="thu-detail"></span>
+                        <div class="bar day" id="thu"></div>
+                    </div>
+                    <div>
+                    <span class="detail" id="fri-detail"></span>
+                    <div class="bar day" id="fri"></div>
+                    </div>
+                    <div>
+                        <span class="detail" id="sat-detail"></span>                    
+                        <div class="bar day" id="sat"></div>
+                    </div>
+                    <div>
+                        <span class="detail" id="sun-detail"></span>
+                        <div class="bar day" id="sun"></div>
+                    </div>
+                
+                    <div class="label">mon</div>
+                    <div class="label">tue</div>
+                    <div class="label">wed</div>
+                    <div class="label">thu</div>
+                    <div class="label">fri</div>
+                    <div class="label">sat</div>
+                    <div class="label">sun</div>     
+                </div>
+
+                <div class="totals">
+                    <div>
+                        <p>Total this month</p>
+                        <p class="dark-text large-text">$478.33</p>
+                    </div>
+                    <div>
+                        <p class="dark-text bold-text">+2.4%</p>
+                        <p>from last month</p>
+                    </div>
+                </div>
+            </section>
+        </div>  
+    </main>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/zoedarkweather">Jennifer Souza</a>.
+    </footer>
+</body>
+
+</html>

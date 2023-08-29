@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display:block;
+    width: 100%;
+}
+
+:root {
+    --font-main: "DM Sans";
+    --font-wt-bold: 700;
+    --font-wt-reg: 400;
+
+    --main-padding: 1.5rem;
+
+    --balance-bg: hsl(10, 79%, 65%);
+    --light-text:  hsl(33, 100%, 98%);
+    --bars-main: hsl(10, 79%, 65%);
+    --bars-main-hover: hsla(10, 79%, 65%, 0.7);
+    --bars-current-day: hsl(186, 34%, 60%);
+    --bars-current-day-hover: hsla(186, 34%, 60%, 0.7);
+    --body-bg: hsl(27, 66%, 92%);
+    --chart-detail-bg:hsl(25, 47%, 15%);
+    --detail-text: hsl(33, 100%, 98%);
+    --spending-bg: hsl(33, 100%, 98%);
+    --very-dark-text: hsl(25, 47%, 15%);
+    --dark-text: hsl(28, 10%, 53%);   
+}
+
+body {
+    font-family: var(--font-main);
+    font-weight: var(--font-wt-reg);
+    font-size: 18px;
+    background-color: var(--body-bg);
+    color: var(--dark-text);
+}
+
+p {
+    font-size: .9rem;
+}
+
+.dark-text {
+    color: var(--very-dark-text)
+}
+
+.bold-text {
+    font-weight: var(--font-wt-bold);
+}
+
+.large-text {
+    font-size: 2.5rem;
+    font-weight: var(--font-wt-bold);
+}
+
+.medium-text {
+    font-size: 1.7rem;
+    font-weight: var(--font-wt-bold);
+}
+
+.grid-container {
+    max-width: 90%;
+    margin: 6rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.balance {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: var(--main-padding);
+    border-radius: 1rem;
+    background-color: var(--balance-bg);
+    color: var(--light-text);
+}
+
+.spending {
+    padding: var(--main-padding);
+    border-radius: 1rem;
+    background-color: var(--spending-bg);
+}
+
+.chart {
+    font-size: 0.9rem;
+    width: 95%;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--dark-text);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: end;  
+}
+
+.bar {
+    cursor: pointer;
+    margin-top: 0.7rem;
+    width: 30px;
+    height: 75px;
+    border-radius: 5px;    
+}   
+
+.day {
+    background-color: var(--bars-main);
+}
+
+.day:hover {
+    background-color: var(--bars-main-hover);
+}
+
+.current-day {
+    background-color: var(--bars-current-day);
+}
+
+.current-day:hover {
+    background-color: var(--bars-current-day-hover);
+
+}
+
+.detail {
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--chart-detail-bg);
+    color: var(--detail-text);
+    visibility: hidden;
+}
+
+.totals {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 500px) {
+    .grid-container {
+        max-width: 500px;
+    }
+
+    .bar {
+        width: 50px;
+    }
+
+    .detail {
+        font-size: 1rem;
+    }
+    
+}
