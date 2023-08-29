@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/zoedarkweather/expenses-chart-component](https://github.com/zoedarkweather/expenses-chart-component)
+- Live Site URL: [https://expenses-chart-component-beige-nine.vercel.app/](https://expenses-chart-component-beige-nine.vercel.app/)
 
 ## My process
 
